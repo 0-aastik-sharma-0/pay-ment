@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="payment.css">
+    <title>Payment-Gateway</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="left">
+                <h3>BILLING ADDRESS</h3>
+                <form>
+                    <h4>Full name</h4>
+                    <input type="text" name="fullname" id="fullname" placeholder="Enter name">
+                    <h4>Email</h4>
+                    <input type="text" name="email" id="email" placeholder="Enter email">
+                    <h4>Address</h4>
+                    <input type="text" name="address" id="address" placeholder="Enter address">
+                    <h4>City</h4>
+                    <input type="text" name="city" id="city" placeholder="Enter city">
+
+                    <!---DROPDOWN---->
+
+                    <div id="zip">
+                        <label>
+                            <h4>State</h4>
+                            <select>
+                                <option>----Choose State----</option>
+                                <option>Himachal Pradesh</option>
+                                <option>Punjab</option>
+                                <option>Haryana</option>
+                                <option>Delhi</option>
+                                <option>J&K</option>
+                            </select>
+                        </label>
+
+                     <!---Range---->
+
+                    <label>
+                        <h4>Zip code</h4>
+                        <input type="number" name="code" id="code" placeholder="Zip code">
+                    </label>
+                </div>
+                </form>
+            </div>
+
+            <!--Right side-->
+
+            <div class="right">
+                <h3>PAYMENT</h3>
+                <form>
+                    <h4>Accepted card</h4>
+                    <br>
+                    <img src="https://imgs.search.brave.com/fGhoawy_jFxqUE1gVl4IklSRCIGhPZlL6jcTvtv-aXk/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9wbmdp/bWcuY29tL3VwbG9h/ZHMvbWFzdGVyY2Fy/ZC9zbWFsbC9tYXN0/ZXJjYXJkX1BORzI3/LnBuZw" width="100">
+                    <img src="" width="50">
+                    <br><br>
+
+                    <h4>Card number</h4>
+                    <input type="text" name="cnumber" id="cnumber" placeholder="Enter card number">
+                    <h4>Exp month</h4>
+                    <input type="text" name="exp-month" id="exp-month" placeholder="Exp month">
+
+                    <!---DROPDOWN---->
+
+                    <div id="zip">
+                        <label>
+                            <h4>Exp year</h4>
+                            <select>
+                                <option>----Choose year----</option>
+                                <option>2024</option>
+                                <option>2025</option>
+                                <option>2026</option>
+                                <option>2027</option>
+                                <option>2028</option>
+                            </select>
+                        </label>
+
+                     <!---Range---->
+
+                    <label>
+                       <h4>CVV</h4>
+                        <input type="number" name="cvv" id="cvv" placeholder="CVV">
+                    </label>
+                </div>
+                </form>
+                 <div class="link">
+                <a href="qr.html" class="click" id="clicked">Click</a>
+                </div>
+            </div>
+        </div>
+    </header>
+</body>
+</html>
